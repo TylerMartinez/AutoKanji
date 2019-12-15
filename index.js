@@ -14,7 +14,11 @@ const init = function() {
 
 const findMatches = function() {
     console.log("Looking for matches");
-}
+};
+
+const compileKanjiDictionary = function() {
+
+};
 
 // Setup api
 const api = {
