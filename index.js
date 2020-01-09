@@ -51,7 +51,7 @@ const findMatches = function(input) {
 };
 
 const setLevelsOfLenience = function(level) {
-    if(Number.isInteger(level))
+    if(Number.isInteger(level) && level > 0)
         levelsOfLenience  = level;
 };
 
