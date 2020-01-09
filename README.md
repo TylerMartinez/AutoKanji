@@ -12,7 +12,7 @@ var kanji;
 kanji = autokanji.find("がっこう"); // Returns: ['学校']
 ```
 
-* SetLeniency - changes the level of leniency we check when determining possible matches. Setting this to 1 makes
+* SetLenience - changes the level of leniency we check when determining possible matches. Setting this to 1 makes
 sure all characters in input must match the kanji translation and 2 makes sure every character but the last one
 matches and so on. The default is 2.
 ```javascript
