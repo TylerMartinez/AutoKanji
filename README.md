@@ -2,6 +2,9 @@
 Javascript library that provides autocomplete suggestions for kanji based on a kana input. The kana to kanji 
 translations are based off the JMDict Dictionary Project.
 
+# Installation
+    npm i autokanji
+
 # Usage
 After installing and requiring the autokanji library the following functionality can be used:
 * Find - returns an array of matches in descending leniency
