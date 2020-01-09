@@ -4,7 +4,7 @@
   "description": "Autocomplete suggestions for kana inputs.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "Japanese",
@@ -22,5 +22,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/TylerMartinez/AutoKanji"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2"
   }
 }
