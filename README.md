@@ -36,6 +36,32 @@ translated to JSON using JMdict Parser that transformed to a json object contain
 kanji representations using the JQ tool. This was then used to construct a trie using the JSONTrie CLI tool and 
 compressed to be included with this package.
 
+# Bundlers
+To use this package with a bundler like webpack it is necessary to emit the "AutoKanjiTrie.json.gz" dictionary to
+the root of your project.
+
+```javascript
+module.exports = {
+  entry: ['./src/index.js', './node_modules/autokanji/AutoKanjiTrie.json.gz'],
+  ...
+  module: {
+    rules: [
+      {
+        test: /\.gz/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: '../',
+              publicPath: '../'
+            }
+          }
+        ]
+      }
+  }
+```
+
 # Mentions
 * JMDict: http://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project
 * JMdict Parser: https://github.com/tkshnwesper/JMdict-Parser
