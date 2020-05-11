@@ -9,7 +9,9 @@ var levelsOfLenience = 2;
 // Functions
 const init = function() {
     // Read File
-    let fileContents = fs.readFileSync(path.resolve(__dirname,'./AutoKanjiTrie.json.gz'));
+    var working = path.resolve()
+
+    let fileContents = fs.readFileSync(path.resolve(working, './AutoKanjiTrie.json.gz'));
 
     // Compile dictionary from zipped trie
     let temp = zlib.gunzipSync(fileContents);

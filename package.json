@@ -1,6 +1,6 @@
 {
   "name": "autokanji",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Autocomplete suggestions for kana inputs.",
   "main": "index.js",
   "scripts": {
